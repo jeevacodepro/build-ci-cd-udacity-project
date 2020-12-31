@@ -26,7 +26,7 @@ jobs:
     - name: Azure Pipelines Action
       uses: Azure/pipelines@v1
       with:
-        azure-devops-project-url: https://dev.azure.com/eastpoint/udacity-ci-cd/
+        azure-devops-project-url: https://dev.azure.com/eastpoint/udacity-ci-cd
         azure-pipeline-name: 'jeevaeastpoint.build-ci-cd-udacity-project'
         azure-devops-token: ${{ secrets.PAT}}
 
