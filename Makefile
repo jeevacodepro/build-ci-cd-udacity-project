@@ -1,6 +1,7 @@
 setup:
 	python3 -m venv ~/.udacity-devops
-	sudo source ~/.udacity-devops/bin/activate
+	sudo -s
+	source ~/.udacity-devops/bin/activate
 
 install:
 	pip install --upgrade pip &&\
