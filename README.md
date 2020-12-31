@@ -1,6 +1,6 @@
 # Build CI CD for Flask App
 
-![Python application](https://github.com/jeevaeastpoint/build-ci-cd-udacity-project/workflows/Python%20application/badge.svg)
+![Python application](https://github.com/jeevaeastpoint/build-ci-cd-udacity-project/workflows/Python+application/badge.svg)
 
 # Project description
 
@@ -25,6 +25,6 @@
       > make test
   
  # Automated Build setup
- 
+   ![Github Action - Tests Passed](Images/Verify Remote Tests pass.png)
  
  
