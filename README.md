@@ -25,6 +25,6 @@
       > make test
   
  # Automated Build setup
-   ![Github Action - Tests Passed](Images/Verify Remote Tests pass.png)
+   ![](Images\Verify Remote Tests pass.png)
  
  
