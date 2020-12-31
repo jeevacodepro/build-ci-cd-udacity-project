@@ -25,7 +25,7 @@ jobs:
         make install
     - name: Linting
       run: |
-        make lint
+        sudo make lint
     - name: Test with pytest
       run: |
         make test
