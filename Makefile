@@ -11,9 +11,6 @@ test:
 
 
 lint:
-	export PATH=$PATH:`which pylint`
-	echo `which pylint`
-	echo $PATH
 	#hadolint Dockerfile #uncomment to explore linting Dockerfiles
 	pylint --disable=R,C,W1203 app.py
 
