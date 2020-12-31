@@ -23,4 +23,10 @@ jobs:
     - name: Test with pytest
       run: |
         make test
+    - name: Azure Pipelines Action
+      uses: Azure/pipelines@v1
+      with:
+        azure-devops-project-url: https://dev.azure.com/eastpoint/udacity-ci-cd/
+        azure-pipeline-name: 'jeevaeastpoint.build-ci-cd-udacity-project'
+        azure-devops-token: ${{ secrets.AZURE_DEVOPS_TOKEN }}
 
