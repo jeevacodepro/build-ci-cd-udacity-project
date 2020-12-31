@@ -18,9 +18,7 @@ jobs:
     - uses: actions/checkout@v2
     - name: Set up Python 3.7
       uses: actions/setup-python@v2
-    - name: Python environment
-      run: |
-        make setup
+    
     - name: Install dependencies
       run: |
         make install
