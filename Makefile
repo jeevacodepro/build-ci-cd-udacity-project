@@ -6,7 +6,6 @@ setup:
 install:
 	pip install --upgrade pip &&\
 		pip install -r requirements.txt
-	pip install pylint
 
 test:
 	#python -m pytest -vv --cov=myrepolib tests/*.py
@@ -14,6 +13,6 @@ test:
 
 
 lint:
-	pylint --disable=R,C,W1203 app.py
+	pylint --disable=R,C,W1203 app.py --threshold 5
 
 all: install lint test
