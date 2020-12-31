@@ -13,6 +13,6 @@ test:
 
 
 lint:
-	pylint --disable=R,C,W1203 app.py --threshold 5
+	pylint --disable=R,C,W1203 --threshold 5 app.py 
 
 all: install lint test
