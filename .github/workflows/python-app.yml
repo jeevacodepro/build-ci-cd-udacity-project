@@ -23,9 +23,4 @@ jobs:
     - name: Test with pytest
       run: |
         make test
-    - name: 'Deploy to Azure Web App'
-      uses: azure/webapps-deploy@v2
-      with:
-        app-name: 'udacity-flaskapp-jeeva'
-        slot-name: 'production'
-        publish-profile: ${{ secrets.AzureAppService_PublishProfile_f3e8066401664d3192a413dee6fe6f90 }}
+
