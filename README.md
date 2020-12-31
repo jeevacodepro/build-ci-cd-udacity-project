@@ -25,6 +25,6 @@
       > make test
   
  # Automated Build setup
-   ![](Images\Verify%20Remote%20Tests%20pass.png)
+   ![](Images/Verify%20Remote%20Tests%20pass.png)
  
  
