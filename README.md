@@ -68,7 +68,12 @@ Port: 443
       > make test
   
  # Automated Build setup
+<<<<<<< HEAD
    ![](Images/Verify+Remote+Tests+pass.png)
+=======
+   ![](Images/Verify%20Remote%20Tests%20pass.png)
+ 
+>>>>>>> ebced9d770b6741699faf970e673bb9d023c6f12
  
 
 
