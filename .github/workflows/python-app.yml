@@ -22,7 +22,8 @@ jobs:
         python-version: 3.5
     - name: Python environment
       run: |
-         make setup
+        export PATH=`which pylint':$PATH
+        make setup
     - name: Install dependencies
       run: |
         make install
