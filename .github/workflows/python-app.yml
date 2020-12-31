@@ -18,6 +18,7 @@ jobs:
         make install
     - name: Lint with pylint
       run: |
+        sudo pip install pylint
         make lint
     - name: Test with pytest
       run: |
