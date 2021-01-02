@@ -79,8 +79,8 @@ stages:
           - task: AzureWebApp@1
             displayName: 'Deploy Azure Web App : udacity-flaskapp-jeeva'
             inputs:
-              azureSubscription: 'Visual Studio Enterprise – MPN Jeeva 1 (7530570f-2b4d-40bd-9741-be67c48ad907)'
+              azureSubscription: $(azureServiceConnectionId)
               appType: 'webAppLinux'
               appName: 'udacity-flaskapp-jeeva'
-              package: '$(Pipeline.Workspace)/drop/$(Build.BuildId).zip'
+              package: $(Build.ArtifactStagingDirectory)/$(Build.BuildId).zip
               runtimeStack: 'PYTHON|3.6'
