@@ -13,7 +13,7 @@
 ## Instructions
 
 <TODO:  
-* Architectural Diagram (Shows how key parts of the system work)>
+* Architectural Diagram (Shows how key parts of the system work)> Trigger build
 
 <TODO:  Instructions for running the Python project.  How could a user with no context run this project without asking you for any help.  Include screenshots with explicit steps to create that work. Be sure to at least include the following screenshots:
 
@@ -68,12 +68,9 @@ Port: 443
       > make test
   
  # Automated Build setup
-<<<<<<< HEAD
-   ![](Images/Verify+Remote+Tests+pass.png)
-=======
+
    ![](Images/Verify%20Remote%20Tests%20pass.png)
- 
->>>>>>> ebced9d770b6741699faf970e673bb9d023c6f12
+
  
 
 
