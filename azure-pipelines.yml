@@ -39,8 +39,8 @@ stages:
     
     - script: |
         make install
-        make pylint
-        make pytest
+        make lint
+        make test
       workingDirectory: $(projectRoot)
       displayName: "Install requirements lint and test"
 
