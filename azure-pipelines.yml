@@ -39,8 +39,10 @@ stages:
     
     - script: |
         make install
+        make pylint
+        make pytest
       workingDirectory: $(projectRoot)
-      displayName: "Install requirements"
+      displayName: "Install requirements lint and test"
 
     - task: ArchiveFiles@2
       displayName: 'Archive files'
@@ -77,7 +79,8 @@ stages:
           - task: AzureWebApp@1
             displayName: 'Deploy Azure Web App : udacity-flaskapp-jeeva'
             inputs:
-              azureSubscription: $(azureServiceConnectionId)
-              appName: $(webAppName)
-              package: $(Pipeline.Workspace)/drop/$(Build.BuildId).zip
-              appType: webAppLinux
+              azureSubscription: 'Visual Studio Enterprise – MPN Jeeva 1 (7530570f-2b4d-40bd-9741-be67c48ad907)'
+              appType: 'webAppLinux'
+              appName: 'udacity-flaskapp-jeeva'
+              package: '$(Pipeline.Workspace)/drop/$(Build.BuildId).zip'
+              runtimeStack: 'PYTHON|3.6'
