@@ -8,7 +8,7 @@
 <TODO: Project Plan
 
 * A link to a Trello board for the project
-* A link to a spreadsheet that includes the original and final project plan>
+* A link to a spreadsheet that includes the original and final project plan> trigger build
 
 ## Instructions
 
